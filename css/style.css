@@ -245,4 +245,65 @@ a {
 }
 .about-us .container .right-side button {
   padding: 28px 40px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 64px;
+}
+.title-container .title {
+  max-width: 424px;
+}
+.title-container div {
+  display: flex;
+  align-items: start;
+  gap: 28px;
+}
+.title-container div .primary-button {
+  padding: 27.5px 38px;
+}
+.title-container div .secondary-button {
+  padding: 26px 40px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 80px;
+  padding: 0px;
+}
+.services-list li img {
+  margin-bottom: 32px;
+}
+.services-list li h3 {
+  font-size: 34px;
+  line-height: 1.4;
+  color: #191919;
+  margin-bottom: 14px;
+}
+.services-list li .description {
+  margin-bottom: 13px;
+}
+.services-list li button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #191919;
+  transition: color 250ms ease-in-out;
+}
+.services-list li button svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.services-list li button:hover {
+  color: #ff7134;
+}
+.services-list li button:focus {
+  color: #cc3e01;
 }/*# sourceMappingURL=style.css.map */

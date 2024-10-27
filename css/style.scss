@@ -290,3 +290,76 @@ a {
         }
     }
 }
+
+.title-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 64px;
+
+    .title {
+        max-width: 424px;
+    }
+
+    div {
+        display: flex;
+        align-items: start;
+        gap: 28px;
+
+        .primary-button {
+            padding: 27.5px 38px;
+        }
+
+        .secondary-button {
+            padding: 26px 40px;
+        }
+    }
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 25px;
+    row-gap: 80px;
+    padding: 0px;
+
+    li {
+        img {
+            margin-bottom: 32px;
+        }
+        
+        h3 {
+            font-size: 34px;
+            line-height: 1.4;
+            color: $black;
+            margin-bottom: 14px;
+        }
+
+        .description {
+            margin-bottom: 13px;
+        }
+
+        button {
+           display: flex;
+           align-items: center;
+           background: transparent;
+           border: none;
+           color: $black;
+           transition: color 250ms ease-in-out;
+
+           svg {
+            margin-right: 10px;
+            fill: currentColor;
+           }
+
+           &:hover {
+            color: $hover-orange;
+           }
+
+           &:focus {
+            color: $focus-orange;
+           }
+        }
+    }
+}

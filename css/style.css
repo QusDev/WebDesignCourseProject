@@ -27,6 +27,9 @@ a {
   color: #ffffff;
   border: none;
   transition: background-color 250ms ease-in-out;
+  padding: 27.5px 38px;
+  font-size: 18px;
+  line-height: 1.14;
 }
 .primary-button:hover {
   background-color: #ff7134;
@@ -40,6 +43,9 @@ a {
   color: #191919;
   border: 2px solid #191919;
   transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
+  padding: 26px 40px;
+  font-size: 18px;
+  line-height: 1.14;
 }
 .secondary-button:hover {
   color: #ff7134;
@@ -196,12 +202,8 @@ a {
   height: 75px;
   width: 100%;
 }
-.hero div div button {
-  height: 100%;
-  width: 180px;
-  color: #ffffff;
-}
 .hero div div button.secondary-button {
+  color: #ffffff;
   border-color: #ffffff;
 }
 .hero div div button.secondary-button:hover {
@@ -243,9 +245,6 @@ a {
   text-align: center;
   margin-bottom: 0;
 }
-.about-us .container .right-side button {
-  padding: 28px 40px;
-}
 
 .title-container {
   display: flex;
@@ -261,12 +260,6 @@ a {
   display: flex;
   align-items: start;
   gap: 28px;
-}
-.title-container div .primary-button {
-  padding: 27.5px 38px;
-}
-.title-container div .secondary-button {
-  padding: 26px 40px;
 }
 
 .services-list {
@@ -306,4 +299,27 @@ a {
 }
 .services-list li button:focus {
   color: #cc3e01;
+}
+
+.bridge.section {
+  background-image: url("../images/bridge/bridge-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bridge.section div.container {
+  margin-left: 146px;
+  margin-right: auto;
+  max-width: 610px;
+}
+.bridge.section div.container h2 {
+  margin-bottom: 20px;
+}
+.bridge.section div.container p {
+  margin-bottom: 35px;
+}
+.bridge.section div.container div {
+  width: 100%;
+  display: flex;
+  gap: 28px;
 }/*# sourceMappingURL=style.css.map */

@@ -39,6 +39,9 @@ a {
     color: $white;
     border: none;
     transition: background-color 250ms ease-in-out;
+    padding: 27.5px 38px;
+    font-size: 18px;
+    line-height: 1.14;
 
     &:hover {
         background-color: $hover-orange;
@@ -55,6 +58,9 @@ a {
     transition:
         color 250ms ease-in-out,
         border-color 250ms ease-in-out;
+    padding: 26px 40px;
+    font-size: 18px;
+    line-height: 1.14;
 
     &:hover {
         color: $hover-orange;
@@ -226,13 +232,8 @@ a {
             height: 75px;
             width: 100%;
 
-            button {
-                height: 100%;
-                width: 180px;
-                color: $white;
-            }
-
             button.secondary-button {
+                color: $white;
                 border-color: $white;
 
                 &:hover {
@@ -284,14 +285,10 @@ a {
             text-align: center;
             margin-bottom: 0;
         }
-
-        button {
-            padding: 28px 40px;
-        }
     }
 }
 
-.title-container { 
+.title-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -306,14 +303,6 @@ a {
         display: flex;
         align-items: start;
         gap: 28px;
-
-        .primary-button {
-            padding: 27.5px 38px;
-        }
-
-        .secondary-button {
-            padding: 26px 40px;
-        }
     }
 }
 
@@ -328,7 +317,7 @@ a {
         img {
             margin-bottom: 32px;
         }
-        
+
         h3 {
             font-size: 34px;
             line-height: 1.4;
@@ -341,25 +330,51 @@ a {
         }
 
         button {
-           display: flex;
-           align-items: center;
-           background: transparent;
-           border: none;
-           color: $black;
-           transition: color 250ms ease-in-out;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            border: none;
+            color: $black;
+            transition: color 250ms ease-in-out;
 
-           svg {
-            margin-right: 10px;
-            fill: currentColor;
-           }
+            svg {
+                margin-right: 10px;
+                fill: currentColor;
+            }
 
-           &:hover {
-            color: $hover-orange;
-           }
+            &:hover {
+                color: $hover-orange;
+            }
 
-           &:focus {
-            color: $focus-orange;
-           }
+            &:focus {
+                color: $focus-orange;
+            }
+        }
+    }
+}
+
+.bridge.section {
+    background-image: url("../images/bridge/bridge-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    div.container {
+        margin-left: 146px;
+        margin-right: auto;
+        max-width: 610px;
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 35px;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            gap: 28px;
         }
     }
 }

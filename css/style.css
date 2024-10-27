@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap");
+* {
+  margin: 0;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-button {
+  background-color: #ff4d01;
+  color: #ffffff;
+  border: none;
+  transition: background-color 250ms ease-in-out;
+}
+.primary-button:hover {
+  background-color: #ff7134;
+}
+.primary-button:focus {
+  background-color: #cc3e01;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #191919;
+  border: 2px solid #191919;
+  transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+
+.vertical-line {
+  height: 20px;
+  width: 2px;
+  background-color: #ff4d01;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header {
+  padding-left: 146px;
+  padding-right: 146px;
+  padding-top: 32px;
+  margin-bottom: 166px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+.header-list li a {
+  font-size: 18px;
+  line-height: 1.66;
+  color: #ffffff;
+  transition: color 250ms ease-in-out;
+}
+.header-list li a:hover {
+  color: #ff7134;
+}
+.header-list li .primary-button {
+  font-size: 16px;
+  line-height: 1.125;
+  padding: 18px 24px;
+}
+.header-list li .vertical-line {
+  height: 30px;
+}
+
+.hero.section {
+  background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)), url("../images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 955px;
+  padding-top: 0px;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero div h1 {
+  font-size: 72px;
+  line-height: 1.16;
+  color: #ffffff;
+  max-width: 660px;
+  margin-bottom: 16px;
+}
+.hero div p {
+  font-size: 18px;
+  line-height: 1.66;
+  color: #ffffff;
+  max-width: 640px;
+  margin-bottom: 35px;
+}
+.hero div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+  height: 75px;
+  width: 100%;
+}
+.hero div div button {
+  height: 100%;
+  width: 180px;
+  color: #ffffff;
+}
+.hero div div button.secondary-button {
+  border-color: #ffffff;
+}
+.hero div div button.secondary-button:hover {
+  color: #ff7134;
+  border-color: #ff7134;
+}
+.hero div div button.secondary-button:focus {
+  color: #cc3e01;
+  border-color: #cc3e01;
+}/*# sourceMappingURL=style.css.map */

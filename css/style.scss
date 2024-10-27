@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+//Variables
+
+$white: #ffffff;
+$black: #191919;
+$orange: #ff4d01;
+$hover-orange: #ff7134;
+$focus-orange: #cc3e01;
+
+//Global
+
+* {
+    margin: 0;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+}
+
+button {
+    font-family: inherit;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: $orange;
+    color: $white;
+    border: none;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover{
+        background-color: $hover-orange;
+    }
+    &:focus{
+        background-color: $focus-orange;
+    }
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: $black;
+    border: 2px solid $black;
+    transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+
+.vertical-line {
+    height: 20px;
+    width: 2px;
+    background-color: $orange;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+//Header
+
+.header {
+    padding-left: 146px;
+    padding-right: 146px;
+    padding-top: 32px;
+    margin-bottom: 166px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+
+    li a {
+        font-size: 18px;
+        line-height: 1.66;
+        color: $white;
+        transition: color 250ms ease-in-out;
+
+        &:hover {
+            color: $hover-orange;
+        }
+    }
+
+    li .primary-button {
+        font-size: 16px;
+        line-height: 1.125;
+        padding: 18px 24px;
+    }
+
+    li .vertical-line {
+        height: 30px;
+    }
+}
+
+//Index.html
+
+.hero.section {
+    background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
+        url("../images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 955px;
+    padding-top: 0px;
+}
+
+.hero {
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 72px;
+            line-height: 1.16;
+            color: $white;
+            max-width: 660px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.66;
+            color: $white;
+            max-width: 640px;
+            margin-bottom: 35px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 28px;
+            height: 75px;
+            width: 100%;
+
+            button {
+                height: 100%;
+                width: 180px;
+                color: $white;
+            }
+
+            button.secondary-button {
+                border-color: $white;
+
+                &:hover {
+                    color: $hover-orange;
+                    border-color: $hover-orange;
+                }
+
+                &:focus {
+                    color: $focus-orange;
+                    border-color: $focus-orange;
+                }
+            }
+        }
+    }
+}

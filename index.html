@@ -3,25 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Cart(0)</a></li>
-          <li><button type="button">Get a quote</button></li>
-        </ul>
-      </nav>
-    </header>
-    <body>
-      <section>
-        <div>
+    <main>
+      <section class="hero section">
+        <header class="header">
+          <nav>
+            <ul class="header-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><div class="vertical-line"></div></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Cart(0)</a></li>
+              <li><button class="primary-button" type="button">Get a quote</button></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="container">
           <h1>We provide effective contracting services</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit
@@ -29,8 +33,8 @@
             porttitor quis quisque erat.
           </p>
           <div>
-            <button type="button">Get a quote</button>
-            <button type="button">Our services</button>
+            <button class="primary-button" type="button">Get a quote</button>
+            <button class="secondary-button" type="button">Our services</button>
           </div>
         </div>
       </section>
@@ -262,7 +266,8 @@
           </ul>
         </div>
       </section>
-    </body>
+    </main>
+
     <footer>
       <div>
         <div>

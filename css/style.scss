@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap");
 //Variables
 
 $white: #ffffff;
 $black: #191919;
 $orange: #ff4d01;
+$grey: #605e5d;
+$light-grey: #989899;
 $hover-orange: #ff7134;
 $focus-orange: #cc3e01;
 
@@ -38,10 +40,10 @@ a {
     border: none;
     transition: background-color 250ms ease-in-out;
 
-    &:hover{
+    &:hover {
         background-color: $hover-orange;
     }
-    &:focus{
+    &:focus {
         background-color: $focus-orange;
     }
 }
@@ -50,13 +52,84 @@ a {
     background-color: transparent;
     color: $black;
     border: 2px solid $black;
-    transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
+    transition:
+        color 250ms ease-in-out,
+        border-color 250ms ease-in-out;
+
+    &:hover {
+        color: $hover-orange;
+        border-color: $hover-orange;
+    }
+
+    &:focus {
+        color: $focus-orange;
+        border-color: $focus-orange;
+    }
 }
 
 .vertical-line {
     height: 20px;
     width: 2px;
     background-color: $orange;
+}
+
+.image-corner-rectangle {
+    position: relative;
+
+    .cover-corner {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 100px;
+        height: 100px;
+        background-color: $white;
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+
+    .rectangle {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 204px;
+        height: 204px;
+        border: 3px solid $orange;
+    }
+}
+
+.route-title {
+    font-size: 20px;
+    line-height: 1.1;
+    color: $orange;
+    letter-spacing: 0.008px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 54px;
+    line-height: 1.14;
+    color: $black;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.66;
+    color: $grey;
+}
+
+.orange {
+    color: $orange;
+}
+
+.statistic {
+    font-size: 72px;
+    line-height: 1.16;
+    color: $black;
+}
+
+.title-statistic {
+    font-size: 18px;
+    line-height: 1.14;
+    color: $light-grey;
 }
 
 .container {
@@ -68,8 +141,8 @@ a {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 
 //Header
@@ -115,7 +188,7 @@ a {
 
 .hero.section {
     background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
-        url("../images/hero-background.jpg");
+        url("../images/hero/hero-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,6 +245,48 @@ a {
                     border-color: $focus-orange;
                 }
             }
+        }
+    }
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: row;
+    gap: 73px;
+
+    .right-side {
+        .route-title {
+            margin-top: 39px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            max-width: 522px;
+            margin-bottom: 19px;
+        }
+
+        .description {
+            max-width: 589px;
+            margin-bottom: 57px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 86px;
+            margin-bottom: 48px;
+        }
+
+        div div {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        button {
+            padding: 28px 40px;
         }
     }
 }

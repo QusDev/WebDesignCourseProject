@@ -41,11 +41,77 @@ a {
   border: 2px solid #191919;
   transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
 }
+.secondary-button:hover {
+  color: #ff7134;
+  border-color: #ff7134;
+}
+.secondary-button:focus {
+  color: #cc3e01;
+  border-color: #cc3e01;
+}
 
 .vertical-line {
   height: 20px;
   width: 2px;
   background-color: #ff4d01;
+}
+
+.image-corner-rectangle {
+  position: relative;
+}
+.image-corner-rectangle .cover-corner {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.image-corner-rectangle .rectangle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 204px;
+  height: 204px;
+  border: 3px solid #ff4d01;
+}
+
+.route-title {
+  font-size: 20px;
+  line-height: 1.1;
+  color: #ff4d01;
+  letter-spacing: 0.008px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 54px;
+  line-height: 1.14;
+  color: #191919;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.66;
+  color: #605e5d;
+}
+
+.orange {
+  color: #ff4d01;
+}
+
+.statistic {
+  font-size: 72px;
+  line-height: 1.16;
+  color: #191919;
+}
+
+.title-statistic {
+  font-size: 18px;
+  line-height: 1.14;
+  color: #989899;
 }
 
 .container {
@@ -57,8 +123,8 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 144px;
+  padding-bottom: 144px;
 }
 
 .header {
@@ -95,7 +161,7 @@ a {
 }
 
 .hero.section {
-  background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)), url("../images/hero-background.jpg");
+  background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)), url("../images/hero/hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -145,4 +211,38 @@ a {
 .hero div div button.secondary-button:focus {
   color: #cc3e01;
   border-color: #cc3e01;
+}
+
+.about-us .container {
+  display: flex;
+  flex-direction: row;
+  gap: 73px;
+}
+.about-us .container .right-side .route-title {
+  margin-top: 39px;
+  margin-bottom: 15px;
+}
+.about-us .container .right-side .title {
+  max-width: 522px;
+  margin-bottom: 19px;
+}
+.about-us .container .right-side .description {
+  max-width: 589px;
+  margin-bottom: 57px;
+}
+.about-us .container .right-side div {
+  display: flex;
+  flex-direction: row;
+  gap: 86px;
+  margin-bottom: 48px;
+}
+.about-us .container .right-side div div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.about-us .container .right-side button {
+  padding: 28px 40px;
 }/*# sourceMappingURL=style.css.map */

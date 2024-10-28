@@ -79,7 +79,7 @@ a {
     background-color: $orange;
 }
 
-.image-corner-rectangle {
+.image-rectangle {
     position: relative;
 
     .cover-corner {
@@ -375,6 +375,128 @@ a {
             width: 100%;
             display: flex;
             gap: 28px;
+        }
+    }
+}
+
+.choose-us.section {
+    padding-top: 300px;
+    position: relative;
+
+    img.background {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top-side-container {
+        display: flex;
+        flex-direction: row;
+        gap: 82px;
+        margin-bottom: 100px;
+
+        div.image-rectangle {
+
+            div.rectangle {
+                width: 250px;
+                height: 250px;
+                top: -26px;
+                left: -26px;
+            }
+        }
+
+        div.information-container{
+            padding-top: 42px;
+            p.route-title {
+                margin-bottom: 15px;
+            }
+            
+            h2 {
+                margin-bottom: 19px;
+                max-width: 473px;
+            }
+
+            p.description {
+                margin-bottom: 19px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            padding: 0;
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                    color: $orange;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.14;
+                    color: $black;
+                }                
+            }
+        }
+    }
+
+    .bottom-side-container {
+        display: flex;
+        flex-direction: row;
+        gap: 89px;
+        div.information-container {
+            padding-top: 72px;
+
+            h2 {
+                max-width: 525px;
+                margin-bottom: 19px;
+            }
+
+            p.description {
+                margin-bottom: 11px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            padding: 0;
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p.statistic {
+                    font-size: 54px;
+                    line-height: 1.16;
+                }
+            }
+        }
+
+        div.image-rectangle {
+            
+            div.rectangle {
+                width: 284px;
+                height: 284px;
+                top: 280px;
+                left: 280px;
+            }
         }
     }
 }

@@ -62,10 +62,10 @@ a {
   background-color: #ff4d01;
 }
 
-.image-corner-rectangle {
+.image-rectangle {
   position: relative;
 }
-.image-corner-rectangle .cover-corner {
+.image-rectangle .cover-corner {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -75,7 +75,7 @@ a {
   -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
           clip-path: polygon(0 0, 100% 0, 0 100%);
 }
-.image-corner-rectangle .rectangle {
+.image-rectangle .rectangle {
   position: absolute;
   top: -20px;
   left: -20px;
@@ -322,4 +322,105 @@ a {
   width: 100%;
   display: flex;
   gap: 28px;
+}
+
+.choose-us.section {
+  padding-top: 300px;
+  position: relative;
+}
+.choose-us.section img.background {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.choose-us.section .top-side-container {
+  display: flex;
+  flex-direction: row;
+  gap: 82px;
+  margin-bottom: 100px;
+}
+.choose-us.section .top-side-container div.image-rectangle div.rectangle {
+  width: 250px;
+  height: 250px;
+  top: -26px;
+  left: -26px;
+}
+.choose-us.section .top-side-container div.information-container {
+  padding-top: 42px;
+}
+.choose-us.section .top-side-container div.information-container p.route-title {
+  margin-bottom: 15px;
+}
+.choose-us.section .top-side-container div.information-container h2 {
+  margin-bottom: 19px;
+  max-width: 473px;
+}
+.choose-us.section .top-side-container div.information-container p.description {
+  margin-bottom: 19px;
+}
+.choose-us.section .top-side-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0;
+}
+.choose-us.section .top-side-container ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.choose-us.section .top-side-container ul li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  color: #ff4d01;
+}
+.choose-us.section .top-side-container ul li p {
+  font-size: 18px;
+  line-height: 1.14;
+  color: #191919;
+}
+.choose-us.section .bottom-side-container {
+  display: flex;
+  flex-direction: row;
+  gap: 89px;
+}
+.choose-us.section .bottom-side-container div.information-container {
+  padding-top: 72px;
+}
+.choose-us.section .bottom-side-container div.information-container h2 {
+  max-width: 525px;
+  margin-bottom: 19px;
+}
+.choose-us.section .bottom-side-container div.information-container p.description {
+  margin-bottom: 11px;
+}
+.choose-us.section .bottom-side-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 0;
+}
+.choose-us.section .bottom-side-container ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose-us.section .bottom-side-container ul li p.statistic {
+  font-size: 54px;
+  line-height: 1.16;
+}
+.choose-us.section .bottom-side-container div.image-rectangle div.rectangle {
+  width: 284px;
+  height: 284px;
+  top: 280px;
+  left: 280px;
 }/*# sourceMappingURL=style.css.map */

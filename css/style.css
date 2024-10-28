@@ -615,4 +615,52 @@ a {
 }
 .testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container button:focus svg {
   color: #cc3e01;
+}
+
+.blog .container p.route-title {
+  margin-bottom: 15px;
+}
+.blog .container div.information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 66px;
+}
+.blog .container ul {
+  padding: 0;
+  -moz-columns: 2;
+       columns: 2;
+}
+.blog .container ul li:first-child {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.blog .container ul li:first-child div {
+  margin-top: 0;
+}
+.blog .container ul li:first-child div p.title {
+  font-size: 34px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.blog .container ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.blog .container ul li div {
+  margin-top: 15px;
+}
+.blog .container ul li div p.title {
+  font-size: 28px;
+  line-height: 1.35;
+  color: #191919;
+  margin-bottom: 18px;
+}
+.blog .container ul li div p.date {
+  font-size: 18px;
+  line-height: 1.1;
+  color: #605e5d;
 }/*# sourceMappingURL=style.css.map */

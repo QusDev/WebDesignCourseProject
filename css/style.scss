@@ -667,11 +667,8 @@ a {
     }
 
     div.testimonials-slider {
-
         div.swiper-wrapper {
-
             div.swiper-slide {
-
                 div.slide-container-client {
                     display: flex;
                     flex-direction: row;
@@ -737,6 +734,64 @@ a {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    .container {
+        p.route-title {
+            margin-bottom: 15px;
+        }
+
+        div.information-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 66px;
+        }
+
+        ul {
+            padding: 0;
+            columns: 2;
+
+            li:first-child {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
+
+                div {
+                    margin-top: 0;
+                    p.title {
+                        font-size: 34px;
+                        line-height: 1.4;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            li {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                margin-bottom: 32px;
+
+                div {
+                    margin-top: 15px;
+                    p.title {
+                        font-size: 28px;
+                        line-height: 1.35;
+                        color: $black;
+                        margin-bottom: 18px;
+                    }
+
+                    p.date {
+                        font-size: 18px;
+                        line-height: 1.1;
+                        color: $grey;
                     }
                 }
             }

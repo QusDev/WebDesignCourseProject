@@ -592,20 +592,20 @@
       </section>
     </main>
 
-    <footer>
-      <div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-          <ul>
-            <li><button type="button"></button></li>
-            <li><button type="button"></button></li>
-            <li><button type="button"></button></li>
-            <li><button type="button"></button></li>
+    <footer class="footer">
+      <div class="container">
+        <div class="information-container">
+          <p id="footer-text" class="information-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <ul class="navigation-buttons">
+            <li><button type="button" onclick="changeText(0)">1</button></li>
+            <li><button type="button" onclick="changeText(1)">2</button></li>
+            <li><button type="button" onclick="changeText(2)">3</button></li>
+            <li><button type="button" onclick="changeText(3)">4</button></li>
           </ul>
         </div>
-        <div>
-          <h3>Menu</h3>
-          <ul>
+        <div class="menu-container">
+          <h3 class="title">Menu</h3>
+          <ul class="list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Blog</a></li>
@@ -619,9 +619,9 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div>
-          <h3>Utility Pages</h3>
-          <ul>
+        <div class="page-container">
+          <h3 class="title">Utility Pages</h3>
+          <ul class="list">
             <li><a href="#">Start Here</a></li>
             <li><a href="#">Password Protected</a></li>
             <li><a href="#">404 Not Found</a></li>
@@ -631,24 +631,28 @@
             <li><a href="#">More Webflow Templates</a></li>
           </ul>
         </div>
-        <div>
-          <h3>Contact us</h3>
-          <address>
-            <div>
-              <!-- svg -->
+        <div class="contact-container">
+          <h3 class="title">Contact us</h3>
+          <ul class="list">
+            <li>
+              <svg>
+                <use href="./images/svg/icons.svg#icon-phone" fill="currentColor"/>
+              </svg>
               <div>
                 <p>Call us</p>
                 <a href="tel:+(323) 238-0682">(323) 238-0682</a>
               </div>
-            </div>
-            <div>
-              <!-- svg -->
+            </li>
+            <li>
+              <svg>
+                <use href="./images/svg/icons.svg#icon-mail" fill="currentColor"/>
+              </svg>
               <div>
                 <p>Email us</p>
                 <a href="mailto:@info@contractor.com">info@contractor.com</a>
               </div>
-            </div>
-          </address>
+            </li>
+          </ul>
         </div>
       </div>
       <div>
@@ -662,5 +666,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper-projects.js"></script>
     <script src="./js/swiper-testimonials.js"></script>
+    <script src="./js/footer-pagination.js"></script>
   </body>
 </html>

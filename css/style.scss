@@ -9,6 +9,38 @@ $light-grey: #989899;
 $hover-orange: #ff7134;
 $focus-orange: #cc3e01;
 
+//Animations
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0.75;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 0.75;
+        transform: translateY(0);
+    }
+}
+
 //Global
 
 * {
@@ -29,6 +61,7 @@ button {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 a {
@@ -792,6 +825,158 @@ a {
                         font-size: 18px;
                         line-height: 1.1;
                         color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #000000;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    div.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 87px;
+
+        div.information-container {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            position: relative;
+            margin-top: 40px;
+
+            p.information-text {
+                position: relative;
+                font-size: 18px;
+                line-height: 1.6;
+                color: $white;
+                opacity: 0.75;
+                max-width: 175px;
+            }
+
+            ul.navigation-buttons {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                li button {
+                    background-color: $orange;
+                    color: $white;
+                    border: none;
+                    transition: background-color 250ms ease-in-out;
+                    width: 36px;
+                    height: 36px;
+
+                    &:hover {
+                        background-color: $hover-orange;
+                    }
+
+                    &:focus {
+                        background-color: $focus-orange;
+                    }
+                }
+            }
+        }
+
+        div.menu-container {
+            display: flex;
+            flex-direction: column;
+
+            ul.list {
+                columns: 2;
+                column-gap: 28px;
+            }
+        }
+
+        div.menu-container,
+        div.page-container {
+            ul.list li {
+                margin-bottom: 17px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    font-size: 18px;
+                    line-height: 1.14;
+                    color: $white;
+                    opacity: 0.75;
+                    transition:
+                        color 250ms ease-in-out,
+                        opacity 250ms ease-in-out;
+
+                    &:hover {
+                        color: $hover-orange;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        div.menu-container,
+        div.page-container,
+        div.contact-container {
+            h3.title {
+                font-size: 22px;
+                line-height: 1.1;
+                color: $white;
+                margin-bottom: 40px;
+                align-self: center;
+            }
+        }
+
+        div.contact-container {
+            ul.list {
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    border: 2px solid $orange;
+                    padding: 28px;
+                    margin-bottom: 18px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    svg {
+                        width: 48px;
+                        height: 48px;
+                        color: $white;
+                        background-color: $orange;
+                        padding: 4px;
+                        margin-right: 16px;
+                    }
+
+                    div {
+                        p,
+                        a {
+                            font-size: 16px;
+                            line-height: 1.1;
+                            color: $white;
+                        }
+
+                        p {
+                            margin-bottom: 6px;
+                        }
+
+                        a {
+                            opacity: 0.75;
+                            transition:
+                                color 250ms ease-in-out,
+                                opacity 250ms ease-in-out;
+
+                            &:hover {
+                                color: $hover-orange;
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
             }

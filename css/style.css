@@ -530,4 +530,89 @@ a {
 .slide-container div.slide-information-container div.title-footer-container p {
   opacity: 0.9;
   color: #ffffff;
+}
+
+.testimonials.section div.container p.route-title {
+  margin-bottom: 15px;
+}
+.testimonials.section div.container div.information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 107px;
+}
+.testimonials.section div.container div.information-container h2.title {
+  max-width: 530px;
+}
+.testimonials.section div.container div.information-container div.navigation-buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.testimonials.section div.container div.information-container div.navigation-buttons .swiper-button-prev,
+.testimonials.section div.container div.information-container div.navigation-buttons .swiper-button-next {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0px;
+  color: #ff4d01;
+  padding: 36px 25px;
+  border: 1px solid #ff4d01;
+  transition: opacity 250ms ease-in-out;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client {
+  padding-top: 28px;
+  max-width: 362px;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client h2.title {
+  font-size: 28px;
+  line-height: 1.35;
+  color: #191919;
+  max-width: 276px;
+  margin-bottom: 13px;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client p.description {
+  margin-bottom: 35px;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container div.client-information p.name {
+  font-size: 18px;
+  line-height: 1.14;
+  color: #191919;
+  margin-bottom: 6px;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container div.client-information p.address {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #989899;
+  text-transform: uppercase;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container button {
+  background-color: transparent;
+  border: none;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container button svg {
+  width: 32px;
+  height: 32px;
+  color: #ff4d01;
+  transition: color 250ms ease-in-out;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container button:hover svg {
+  color: #ff7134;
+}
+.testimonials.section div.testimonials-slider div.swiper-wrapper div.swiper-slide div.slide-container-client div.slide-information-client div.client-information-container button:focus svg {
+  color: #cc3e01;
 }/*# sourceMappingURL=style.css.map */

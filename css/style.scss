@@ -626,3 +626,120 @@ a {
         }
     }
 }
+
+.testimonials.section {
+    div.container {
+        p.route-title {
+            margin-bottom: 15px;
+        }
+
+        div.information-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 107px;
+
+            h2.title {
+                max-width: 530px;
+            }
+
+            div.navigation-buttons {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: fit-content;
+                    margin-top: 0px;
+                    color: $orange;
+                    padding: 36px 25px;
+                    border: 1px solid $orange;
+                    transition: opacity 250ms ease-in-out;
+                }
+            }
+        }
+    }
+
+    div.testimonials-slider {
+
+        div.swiper-wrapper {
+
+            div.swiper-slide {
+
+                div.slide-container-client {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 38px;
+
+                    div.slide-information-client {
+                        padding-top: 28px;
+                        max-width: 362px;
+
+                        h2.title {
+                            font-size: 28px;
+                            line-height: 1.35;
+                            color: $black;
+                            max-width: 276px;
+                            margin-bottom: 13px;
+                        }
+
+                        p.description {
+                            margin-bottom: 35px;
+                        }
+
+                        div.client-information-container {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            div.client-information {
+                                p.name {
+                                    font-size: 18px;
+                                    line-height: 1.14;
+                                    color: $black;
+                                    margin-bottom: 6px;
+                                }
+
+                                p.address {
+                                    font-size: 14px;
+                                    line-height: 1.2;
+                                    color: $light-grey;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            button {
+                                background-color: transparent;
+                                border: none;
+                                svg {
+                                    width: 32px;
+                                    height: 32px;
+                                    color: $orange;
+                                    transition: color 250ms ease-in-out;
+                                }
+
+                                &:hover {
+                                    svg {
+                                        color: $hover-orange;
+                                    }
+                                }
+
+                                &:focus {
+                                    svg {
+                                        color: $focus-orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

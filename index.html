@@ -358,7 +358,10 @@
                     <div class="rectangle"></div>
                     <div class="title-footer-container">
                       <svg>
-                        <use href="./images/svg/icons.svg#icon-building" fill="currentColor"/>
+                        <use
+                          href="./images/svg/icons.svg#icon-building"
+                          fill="currentColor"
+                        />
                       </svg>
                       <p>Construction</p>
                     </div>
@@ -378,7 +381,10 @@
                     <div class="rectangle"></div>
                     <div class="title-footer-container">
                       <svg>
-                        <use href="./images/svg/icons.svg#icon-remodeling" fill="currentColor"/>
+                        <use
+                          href="./images/svg/icons.svg#icon-remodeling"
+                          fill="currentColor"
+                        />
                       </svg>
                       <p>Remodeling</p>
                     </div>
@@ -398,7 +404,10 @@
                     <div class="rectangle"></div>
                     <div class="title-footer-container">
                       <svg>
-                        <use href="./images/svg/icons.svg#icon-remodeling" fill="currentColor"/>
+                        <use
+                          href="./images/svg/icons.svg#icon-remodeling"
+                          fill="currentColor"
+                        />
                       </svg>
                       <p>Remodeling</p>
                     </div>
@@ -418,14 +427,122 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <p>/Testimonials</p>
-          <div>
-            <h2>What our clients say about us and our work</h2>
-            <!-- slider buttons -->
+      <section class="testimonials section">
+        <div class="container">
+          <p class="route-title">/Testimonials</p>
+          <div class="information-container">
+            <h2 class="title">What our clients say about us and our work</h2>
+            <div class="navigation-buttons">
+              <div
+                class="testimonials-slider-button-prev swiper-button-prev"
+              ></div>
+              <div
+                class="testimonials-slider-button-next swiper-button-next"
+              ></div>
+            </div>
           </div>
-          <!-- slider -->
+          <div class="testimonials-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-container-client">
+                  <img
+                    src="./images/testimonials/client1.png"
+                    alt="client"
+                    width="340"
+                    height="318"
+                  />
+                  <div class="slide-information-client">
+                    <h2 class="title">“A true team of expert contractors”</h2>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Convallis senectus non dui vel tortor. Justo lectus
+                      integer arcu elit.
+                    </p>
+                    <div class="client-information-container">
+                      <div class="client-information">
+                        <p class="name">John Carter</p>
+                        <p class="address">Malibu Beach, CA</p>
+                      </div>
+                      <button type="button">
+                        <svg>
+                          <use
+                            href="./images/svg/icons.svg#icon-open-in-new"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-container-client">
+                  <img
+                    src="./images/testimonials/client2.png"
+                    alt="client"
+                    width="340"
+                    height="318"
+                  />
+                  <div class="slide-information-client">
+                    <h2 class="title">“A team that never undelivers”</h2>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Convallis senectus non dui vel tortor. Justo lectus
+                      integer arcu elit.
+                    </p>
+                    <div class="client-information-container">
+                      <div class="client-information">
+                        <p class="name">Lily Woods</p>
+                        <p class="address">HollyWOODS hILLS, ca</p>
+                      </div>
+                      <button type="button">
+                        <svg>
+                          <use
+                            href="./images/svg/icons.svg#icon-open-in-new"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-container-client">
+                  <img
+                    src="./images/testimonials/client3.png"
+                    alt="client"
+                    width="340"
+                    height="318"
+                  />
+                  <div class="slide-information-client">
+                    <h2 class="title">
+                      “Great work quality, and delivered on time”
+                    </h2>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Convallis senectus non dui vel tortor. Justo lectus
+                      integer arcu elit.
+                    </p>
+                    <div class="client-information-container">
+                      <div class="client-information">
+                        <p class="name">Matt Cannon</p>
+                        <p class="address">Los Angeles, ca</p>
+                      </div>
+                      <button type="button">
+                        <svg>
+                          <use
+                            href="./images/svg/icons.svg#icon-open-in-new"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -536,5 +653,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper-projects.js"></script>
+    <script src="./js/swiper-testimonials.js"></script>
   </body>
 </html>

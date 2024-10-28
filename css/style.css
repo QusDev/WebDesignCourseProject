@@ -65,16 +65,6 @@ a {
 .image-rectangle {
   position: relative;
 }
-.image-rectangle .cover-corner {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 100px;
-  height: 100px;
-  background-color: #ffffff;
-  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 0 100%);
-}
 .image-rectangle .rectangle {
   position: absolute;
   top: -20px;

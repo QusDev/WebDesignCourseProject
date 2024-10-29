@@ -1,5 +1,5 @@
 const testimonials_swiper = new Swiper('.testimonials-slider', {
-    slidesPerView: 1.25,
+    slidesPerView: 1,
     spaceBetween: 104,
 
     navigation: {

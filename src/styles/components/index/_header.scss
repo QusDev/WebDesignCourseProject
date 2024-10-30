@@ -1,0 +1,36 @@
+.header {
+    padding-left: 146px;
+    padding-right: 146px;
+    padding-top: 32px;
+    margin-bottom: 166px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+
+    li a {
+        font-size: 18px;
+        line-height: 1.66;
+        color: $white;
+        transition: color 250ms ease-in-out;
+
+        &:hover {
+            color: $hover-orange;
+        }
+    }
+
+    li .primary-button {
+        font-size: 16px;
+        line-height: 1.125;
+        padding: 18px 24px;
+    }
+
+    li .vertical-line {
+        height: 30px;
+    }
+}

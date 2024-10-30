@@ -1,0 +1,25 @@
+.bridge.section {
+    background-image: url("../images/bridge/bridge-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    div.container {
+        margin-left: 146px;
+        margin-right: auto;
+        max-width: 610px;
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 35px;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            gap: 28px;
+        }
+    }
+}

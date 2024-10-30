@@ -1,0 +1,107 @@
+.primary-button {
+    background-color: $orange;
+    color: $white;
+    border: none;
+    transition: background-color 250ms ease-in-out;
+    padding: 27.5px 38px;
+    font-size: 18px;
+    line-height: 1.14;
+
+    &:hover {
+        background-color: $hover-orange;
+    }
+    &:focus {
+        background-color: $focus-orange;
+    }
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: $black;
+    border: 2px solid $black;
+    transition:
+        color 250ms ease-in-out,
+        border-color 250ms ease-in-out;
+    padding: 26px 40px;
+    font-size: 18px;
+    line-height: 1.14;
+
+    &:hover {
+        color: $hover-orange;
+        border-color: $hover-orange;
+    }
+
+    &:focus {
+        color: $focus-orange;
+        border-color: $focus-orange;
+    }
+}
+
+.route-title {
+    font-size: 20px;
+    line-height: 1.1;
+    color: $orange;
+    letter-spacing: 0.008px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.section {
+    padding-top: 144px;
+    padding-bottom: 144px;
+}
+
+.vertical-line {
+    height: 20px;
+    width: 2px;
+    background-color: $orange;
+}
+
+.image-rectangle {
+    position: relative;
+
+    .rectangle {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 204px;
+        height: 204px;
+        border: 3px solid $orange;
+    }
+}
+
+.title {
+    font-size: 54px;
+    line-height: 1.14;
+    color: $black;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.66;
+    color: $grey;
+}
+
+.orange {
+    color: $orange;
+}
+
+.statistic {
+    font-size: 72px;
+    line-height: 1.16;
+    color: $black;
+}
+
+.title-statistic {
+    font-size: 18px;
+    line-height: 1.14;
+    color: $light-grey;
+}

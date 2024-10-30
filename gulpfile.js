@@ -18,27 +18,27 @@ const paths = {
       scss: "./src/styles/**/*.scss",
       css: "./src/styles/**/*.css",
     },
-    dest: "./dist/css",
+    dest: "./docs/css",
   },
   scripts: {
     src: "./src/scripts/**/*.js",
-    dest: "./dist/js/",
+    dest: "./docs/js/",
   },
   images: {
     src: "./src/images/**/*",
-    dest: "./dist/images/",
+    dest: "./docs/images/",
   },
   htmls: {
     src: "./src/*.html",
-    dest: "./dist/",
+    dest: "./docs/",
   },
 };
 
 function cleanDist(done) {
-  if (fs.existsSync("./dist/") == false) {
+  if (fs.existsSync("./docs/") == false) {
     return done();
   }
-  return gulp.src("./dist/", { read: false }).pipe(clean());
+  return gulp.src("./docs/", { read: false }).pipe(clean());
 }
 
 function scss() {
@@ -115,7 +115,7 @@ function htmls() {
 function watch() {
   browsersync.init({
     server: {
-      baseDir: "./dist/",
+      baseDir: "./docs/",
     },
   });
   gulp.watch(paths.htmls.dest).on("change", browsersync.reload);

@@ -11,6 +11,7 @@ const browsersync = require("browser-sync");
 const clean = require("gulp-clean");
 const fs = require("fs");
 const rename = require('gulp-rename');
+const fileinclude = require("gulp-file-include");
 
 const paths = {
   styles: {
@@ -29,7 +30,7 @@ const paths = {
     dest: "./docs/images/",
   },
   htmls: {
-    src: "./src/*.html",
+    src: "./src/**/*.html",
     dest: "./docs/",
   },
 };
@@ -103,6 +104,9 @@ function images() {
 function htmls() {
   return gulp
     .src(paths.htmls.src)
+    .pipe(fileinclude({
+      prefix: '@@',
+    }))
     .pipe(
       htmlmin({
         collapseWhitespace: true,

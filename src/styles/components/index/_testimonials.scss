@@ -1,110 +1,127 @@
-.testimonials.section {
-    div.container {
-        p.route-title {
-            margin-bottom: 15px;
-        }
-
-        div.information-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-bottom: 107px;
-
-            h2.title {
-                max-width: 530px;
-            }
-
-            div.navigation-buttons {
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 24px;
-
-                .swiper-button-prev,
-                .swiper-button-next {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    width: fit-content;
-                    margin-top: 0px;
-                    color: $orange;
-                    padding: 36px 25px;
-                    border: 1px solid $orange;
-                    transition: opacity 250ms ease-in-out;
-                }
-            }
+.testimonials {
+    &__route {
+        @include mobile {
+            text-align: center;
         }
     }
 
-    div.testimonials-slider {
-        div.swiper-wrapper {
-            div.swiper-slide {
-                div.slide-container-client {
+    &__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        max-width: 530px;
+
+        @include mobile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__swiper {
+        &-buttons-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+    
+        &-button-prev,
+        &-button-next {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: fit-content !important;
+            margin-top: 0px !important;
+            color: $orange !important;
+            padding: 36px 25px !important;
+            border: 1px solid $orange !important;
+        }
+
+
+        &-slide {
+            display: flex !important;
+            flex-direction: row;
+            column-gap: 38px;
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+            &-image {
+                @include mobile {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &-content {
+
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding-top: 30px;
+
+                @include mobile {
+                    padding-top: 15px;
+                    row-gap: 15px;
+                }
+            }
+
+            &-title {
+                max-width: 276px;
+                
+                @include mobile {
+                    text-align: center;
+                }
+            }
+
+            &-description {
+                max-width: 360px;
+                color: $light-grey;
+
+                @include mobile {
+                    text-align: center;
+                    
+                }
+            }
+
+            &-client {
+
+                &-wrapper {
                     display: flex;
-                    flex-direction: row;
-                    gap: 38px;
+                    justify-content: space-between;
+                    align-items: center;
 
-                    div.slide-information-client {
-                        padding-top: 28px;
-                        max-width: 362px;
+                    @include mobile {
+                        justify-content: space-evenly;
+                    }
+                }
 
-                        h2.title {
-                            font-size: 28px;
-                            line-height: 1.35;
-                            color: $black;
-                            max-width: 276px;
-                            margin-bottom: 13px;
-                        }
+                &-title {
+                    margin-bottom: 6px;
+                }
 
-                        p.description {
-                            margin-bottom: 35px;
-                        }
+                &-description {
+                    color: $light-grey;
+                    text-transform: uppercase;
+                }
 
-                        div.client-information-container {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
+                &-link {
+                    color: $orange;
 
-                            div.client-information {
-                                p.name {
-                                    font-size: 18px;
-                                    line-height: 1.14;
-                                    color: $black;
-                                    margin-bottom: 6px;
-                                }
-
-                                p.address {
-                                    font-size: 14px;
-                                    line-height: 1.2;
-                                    color: $light-grey;
-                                    text-transform: uppercase;
-                                }
-                            }
-
-                            button {
-                                background-color: transparent;
-                                border: none;
-                                svg {
-                                    width: 32px;
-                                    height: 32px;
-                                    color: $orange;
-                                    transition: color 250ms ease-in-out;
-                                }
-
-                                &:hover {
-                                    svg {
-                                        color: $hover-orange;
-                                    }
-                                }
-
-                                &:focus {
-                                    svg {
-                                        color: $focus-orange;
-                                    }
-                                }
-                            }
-                        }
+                    @include hover {
+                        color: $hover-orange;
                     }
                 }
             }

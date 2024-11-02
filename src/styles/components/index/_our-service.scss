@@ -1,64 +1,158 @@
 
-.title-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 64px;
+// .title-container {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin-top: 15px;
+//     margin-bottom: 64px;
 
-    .title {
-        max-width: 424px;
+//     .title {
+//         max-width: 424px;
+//     }
+
+//     div {
+//         display: flex;
+//         align-items: start;
+//         gap: 28px;
+//     }
+// }
+
+// .services-list {
+//     display: grid;
+//     grid-template-columns: auto auto auto;
+//     column-gap: 25px;
+//     row-gap: 80px;
+//     padding: 0px;
+
+//     li {
+//         img {
+//             margin-bottom: 32px;
+//         }
+
+//         h3 {
+//             font-size: 34px;
+//             line-height: 1.4;
+//             color: $black;
+//             margin-bottom: 14px;
+//         }
+
+//         .description {
+//             margin-bottom: 13px;
+//         }
+
+//         button {
+//             display: flex;
+//             align-items: center;
+//             background: transparent;
+//             border: none;
+//             color: $black;
+//             transition: color 250ms ease-in-out;
+
+//             svg {
+//                 margin-right: 10px;
+//                 fill: currentColor;
+//             }
+
+//             &:hover {
+//                 color: $hover-orange;
+//             }
+
+//             &:focus {
+//                 color: $focus-orange;
+//             }
+//         }
+//     }
+// }
+
+.our-services {
+
+    &__route {
+        @include mobile {
+            text-align: center;
+        }
     }
 
-    div {
+    &__header {
         display: flex;
-        align-items: start;
-        gap: 28px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+
+        @include mobile {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        &-title {
+            max-width: 416px;
+            
+            @include mobile {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+
+        &-buttons-wrapper {
+            display: flex;
+            column-gap: 14px;
+        }
+
+        &-button {
+            @include mobile {
+                padding-inline: 14px;
+                height: 50px;
+            }
+        }
     }
-}
 
-.services-list {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 25px;
-    row-gap: 80px;
-    padding: 0px;
+    &__list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 57px;
+        row-gap: 80px;
 
-    li {
-        img {
+        @include tablet {
+            grid-template-columns: auto auto;
+        }
+
+        @include mobile {
+            grid-template-columns: auto;
+        }
+    }
+
+    &__item {
+        
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-image {
             margin-bottom: 32px;
         }
 
-        h3 {
-            font-size: 34px;
-            line-height: 1.4;
-            color: $black;
+        &-title,
+        &-description {
             margin-bottom: 14px;
         }
 
-        .description {
-            margin-bottom: 13px;
+        &-description {
+            color: $grey;
+
+            @include mobile {
+                text-align: center;
+                max-width: 335px;
+            }
         }
 
-        button {
+        &-link {
             display: flex;
             align-items: center;
-            background: transparent;
-            border: none;
-            color: $black;
-            transition: color 250ms ease-in-out;
+            column-gap: 10px;
 
-            svg {
-                margin-right: 10px;
-                fill: currentColor;
-            }
-
-            &:hover {
-                color: $hover-orange;
-            }
-
-            &:focus {
-                color: $focus-orange;
+            @include hover {
+                color: $orange;
             }
         }
     }

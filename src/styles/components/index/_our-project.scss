@@ -1,136 +1,129 @@
-.our-projects.section {
-    div.container {
+.our-projects {
+
+    &__route {
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__title-wrapper {
         display: flex;
-        flex-direction: column;
-        min-width: 0px;
+        margin-bottom: 64px;
 
-        div.information-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 137px;
-            margin-bottom: 67px;
+        @include mobile {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
 
-            h2.title {
-                max-width: 602px;
-            }
+    &__title {
+        @include mobile {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 28px;
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            height: 50px;
+            padding-inline: 25px;
+        }
+    }
+
+    &__swiper {
+        &-slide {
+            position: relative;
         }
 
-        div.buttons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 28px;
+        &-image {
+            filter: brightness(75%);
+            width: 100%;
+            height: 100%;
         }
 
-        .our-projects-slider {
-
-            &.swiper {
-                margin: 0;
+        &-content {
+            &-wrapper {
+                position: absolute;
+                top: 75%;
+                left: 0px;
+                translate: 0 -75%;
+                max-width: 485px;
+                padding-inline: 30px;
             }
 
-            .swiper-wrapper {
-                margin-bottom: 66px;
+            &-title {
+                color: $white;
+                margin-bottom: 16px;
+            }
 
-                .swiper-slide {
-                    .slide-container {
-                        display: flex;
-                        align-items: end;
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        height: 641px;
+            &-description {
+                color: $light-white;
+                margin-bottom: 43px;
 
-                        &.construction {
-                            background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
-                                url("../images/our-projects/image1.jpg");
-                        }
-
-                        &.kitchen {
-                            background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
-                                url("../images/our-projects/image2.jpg");
-                        }
-
-                        &.office {
-                            background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
-                                url("../images/our-projects/image3.jpg");
-                        }
-
-                        div.slide-information-container {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: start;
-                            padding-left: 30px;
-                            padding-right: 30px;
-                            padding-bottom: 30px;
-
-                            h2.title {
-                                font-size: 34px;
-                                font-weight: 400;
-                                line-height: 1.4;
-                                color: $white;
-                                max-width: 361px;
-                                margin-bottom: 16px;
-                            }
-
-                            p.description {
-                                font-size: 18px;
-                                line-height: 1.6;
-                                margin-bottom: 43px;
-                                color: $white;
-                                opacity: 0.9;
-                            }
-
-                            div.rectangle {
-                                width: 100%;
-                                height: 1px;
-                                background-color: $light-grey;
-                                margin-bottom: 30px;
-                            }
-
-                            div.title-footer-container {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: center;
-                                align-items: center;
-                                gap: 6px;
-
-                                svg {
-                                    width: 32px;
-                                    height: 32px;
-                                    color: $orange;
-                                }
-
-                                p {
-                                    opacity: 0.9;
-                                    color: $white;
-                                }
-                            }
-                        }
-                    }
+                @include mobile {
+                    margin-bottom: 15px;
                 }
             }
 
-            .navigation-buttons {
-                position: relative;
+            &-horizontal-line {
+                width: 100%;
+                height: 1px;
+                background-color: $light-grey;
+                margin-bottom: 30px;
+
+                @include mobile {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &-mark-wrapper {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                gap: 24px;
-
-                .swiper-button-prev,
-                .swiper-button-next {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    width: fit-content;
-                    margin-top: 0px;
-                    color: $orange;
-                    padding: 36px 25px;
-                    border: 1px solid $orange;
-                    transition: opacity 250ms ease-in-out;
-                }
+                column-gap: 10px;
             }
+
+            &-mark-icon {
+                color: $orange;
+            }
+
+            &-mark-text {
+                color: $light-white;
+            }
+        }
+
+        &-buttons-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 30px;
+
+            @include mobile {
+                margin-top: 15px;
+            }
+        }
+
+        &-button-prev,
+        &-button-next {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: fit-content !important;
+            margin-top: 0px !important;
+            color: $orange !important;
+            padding: 36px 25px !important;
+            border: 1px solid $orange !important;
         }
     }
 }

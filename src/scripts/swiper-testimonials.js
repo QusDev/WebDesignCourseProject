@@ -1,9 +1,9 @@
-const testimonials_swiper = new Swiper('.testimonials-slider', {
+const testimonials_swiper = new Swiper('.testimonials__swiper', {
     slidesPerView: 1,
-    spaceBetween: 104,
+    spaceBetween: 120,
 
     navigation: {
-        nextEl: '.testimonials-slider-button-next',
-        prevEl: '.testimonials-slider-button-prev',
+        nextEl: '.testimonials__swiper-button-next',
+        prevEl: '.testimonials__swiper-button-prev',
     }
 });

@@ -1,36 +1,45 @@
 .header {
-    padding-left: 146px;
-    padding-right: 146px;
     padding-top: 32px;
-    margin-bottom: 166px;
-}
 
-.header-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
+    @include mobile {
+        padding-top: 16px;
+    }
 
-    li a {
-        font-size: 18px;
-        line-height: 1.66;
-        color: $white;
-        transition: color 250ms ease-in-out;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 24px;
 
-        &:hover {
-            color: $hover-orange;
+        @include mobile {
+            height: 48px;
+            column-gap: 0;
         }
     }
 
-    li .primary-button {
-        font-size: 16px;
-        line-height: 1.125;
-        padding: 18px 24px;
+    &__menu {
+        margin-left: auto;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 32px;
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            height: 48px;
+            color: $white;
+
+            @include hover {
+                color: $orange;
+            };
+        }
     }
 
-    li .vertical-line {
-        height: 30px;
+    &__logo {
+        color: $orange;
+        box-shadow: 0 2px;
     }
 }

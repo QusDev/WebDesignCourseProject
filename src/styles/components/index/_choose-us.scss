@@ -117,3 +117,140 @@
         }
     }
 }
+
+.choose-us-background {
+    background-image: url("../images/choose-us/choose-us-background.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+
+    @include tablet {
+        padding-top: 150px;
+    }
+}
+
+.choose-us {
+    &__top-wrapper {
+        display: flex;
+        column-gap: 82px;
+        margin-bottom: 100px;
+
+        @include tablet {
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+    }
+
+    &__image-wrapper {
+        &.square-top-left {
+            position: relative;
+
+            &::after {
+                @include square(250px);
+
+                content: "";
+                top: -3%;
+                left: -3%;
+                position: absolute;
+                border: 3px solid $orange;
+            }
+        }
+        
+        &.square-bottom-right {
+            position: relative;
+
+            &::after {
+                @include square(284px);
+
+                content: "";
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                border: 3px solid $orange;
+            }
+        }
+
+        @include tablet {
+            padding: 7.5px;
+            border: 3px solid $orange;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        column-gap: 82px;
+
+        @include tablet {
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        @include tablet {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content-wrapper {
+        padding-top: 43px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 19px;
+        max-width: 523px;
+        
+        @include tablet {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        margin-bottom: 30px;
+        color: $grey;
+
+        @include tablet {
+            text-align: center;
+            max-width: 500px;
+        }
+    }
+
+    &__progress-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__progress-item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__icon-check {
+        color: $orange;
+    }
+
+    &__statistic-list {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    &__statistic-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__statistic-description {
+        color: $light-grey;
+        text-align: center;
+    }
+}

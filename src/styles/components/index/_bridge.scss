@@ -1,25 +1,51 @@
-.bridge.section {
+.bridge-background {
     background-image: url("../images/bridge/bridge-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    div.container {
-        margin-left: 146px;
-        margin-right: auto;
-        max-width: 610px;
-        h2 {
-            margin-bottom: 20px;
-        }
+    @include tablet {
+        background-image: linear-gradient(rgba(52, 52, 52, 0.2), rgba(52, 52, 52, 0.2)),
+            url("../images/bridge/bridge-background.jpg");
+    }
+}
 
-        p {
-            margin-bottom: 35px;
-        }
+.bridge {
+    &__title {
+        margin-bottom: 20px;
+        max-width: 604px;
 
-        div {
-            width: 100%;
-            display: flex;
-            gap: 28px;
+        @include tablet {
+            text-align: center;
+            margin-inline: auto;
+            color: $white;
+        }
+    }
+
+    &__description {
+        margin-bottom: 35px;
+        max-width: 574px;
+        color: $grey;
+
+        @include tablet {
+            text-align: center;
+            margin-inline: auto;
+            color: $white;
+        }
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        gap: 28px;
+
+        @include tablet {
+            justify-content: center;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            height: 50px;
         }
     }
 }

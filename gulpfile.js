@@ -30,6 +30,7 @@ const paths = {
     dest: "./docs/images/",
   },
   htmls: {
+    index: "./src/index.html",
     src: "./src/**/*.html",
     dest: "./docs/",
   },
@@ -103,7 +104,7 @@ function images() {
 
 function htmls() {
   return gulp
-    .src(paths.htmls.src)
+    .src(paths.htmls.index)
     .pipe(fileinclude({
       prefix: '@@',
     }))

@@ -1,43 +1,62 @@
-<section id="about-us" class="about-us section">
-    <div class="container">
-      <div class="image-rectangle">
+<section class="section" id="about-us">
+  <div class="container">
+    <div class="about-us">
+      <div class="about-us__image-wrapper orange-square-top-left hidden-mobile">
         <img
+          class="about-us__image"
           src="./images/about-us/image1.png"
           alt="builder"
           width="479"
           height="681"
         />
-        <div class="rectangle"></div>
       </div>
-      <div class="right-side">
-        <p class="route-title">/About us</p>
-        <h2 class="title">
+      <div class="about-us__content">
+        <h6 class="about-us__route route-title">/About us</h6>
+        <h2 class="about-us__title">
           A team of reliable and experienced contractors
         </h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
-          imperdiet nisi metus, viverra nulla aliquet dui porta porttitor
-          neque lectus diam justo lobortis purus in elit, elementum
-          dignissim nullam vitae pellentesque aliquet aliquam sagittis
-          pulvinar egestas morbi suspendisse eleifend.
-        </p>
-        <div>
-          <div>
-            <p class="statistic"><span class="orange">+</span>350</p>
-            <p class="title-statistic">Executed Projects</p>
-          </div>
-          <div>
-            <p class="statistic">12<span class="orange">Y</span></p>
-            <p class="title-statistic">Experience</p>
-          </div>
-          <div>
-            <p class="statistic"><span class="orange">+</span>400</p>
-            <p class="title-statistic">Satisfied Clients</p>
-          </div>
+        <div
+          class="about-us__image-wrapper visible-mobile"
+        >
+          <img
+            class="about-us__image"
+            src="./images/about-us/image1.png"
+            alt="builder"
+            width="479"
+            height="681"
+          />
         </div>
-        <button class="secondary-button" type="button">
+        <p class="about-us__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
+          imperdiet nisi metus, viverra nulla aliquet dui porta porttitor neque
+          lectus diam justo lobortis purus in elit, elementum dignissim nullam
+          vitae pellentesque aliquet aliquam sagittis pulvinar egestas morbi
+          suspendisse eleifend.
+        </p>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <h1 class="about-us__statistic-title">
+              <span class="orange-text">+</span>350
+            </h1>
+            <p class="about-us__statistic-description">Executed Projects</p>
+          </li>
+          <li class="about-us__item">
+            <h1 class="about-us__statistic-title">
+              12<span class="orange-text">Y</span>
+            </h1>
+            <p class="about-us__statistic-description">Experience</p>
+          </li>
+          <li class="about-us__item">
+            <h1 class="about-us__statistic-title">
+              <span class="orange-text">+</span>400
+            </h1>
+            <p class="about-us__statistic-description">Experience</p>
+          </li>
+        </ul>
+        <button class="about-us__button secondary-button black" type="button">
           About our company
         </button>
       </div>
     </div>
-  </section>
+  </div>
+</section>

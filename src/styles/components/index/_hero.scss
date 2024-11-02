@@ -1,57 +1,107 @@
-.hero.section {
+// .hero.section {
+//     background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
+//         url("../images/hero/hero-background.jpg");
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     height: 955px;
+//     padding-top: 0px;
+// }
+
+// .hero {
+//     div {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+
+//         h1 {
+//             font-size: 72px;
+//             line-height: 1.16;
+//             color: $white;
+//             max-width: 660px;
+//             margin-bottom: 16px;
+//         }
+
+//         p {
+//             font-size: 18px;
+//             line-height: 1.66;
+//             color: $white;
+//             max-width: 640px;
+//             margin-bottom: 35px;
+//         }
+
+//         div {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             gap: 28px;
+//             height: 75px;
+//             width: 100%;
+
+//             button.secondary-button {
+//                 color: $white;
+//                 border-color: $white;
+
+//                 &:hover {
+//                     color: $hover-orange;
+//                     border-color: $hover-orange;
+//                 }
+
+//                 &:focus {
+//                     color: $focus-orange;
+//                     border-color: $focus-orange;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.hero-background {
     background-image: linear-gradient(rgba(52, 52, 52, 0.6), rgba(52, 52, 52, 0.6)),
         url("../images/hero/hero-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 955px;
     padding-top: 0px;
+    padding-bottom: 344px;
+
+    @include mobile {
+        padding-bottom: 200px;
+    }
 }
 
 .hero {
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    @include flex-center;
 
-        h1 {
-            font-size: 72px;
-            line-height: 1.16;
-            color: $white;
-            max-width: 660px;
-            margin-bottom: 16px;
-        }
+    flex-direction: column;
+    color: $white;
+    padding-top: 166px;
 
-        p {
-            font-size: 18px;
-            line-height: 1.66;
-            color: $white;
-            max-width: 640px;
-            margin-bottom: 35px;
-        }
+    @include mobile {
+        padding-top: 60px;
+    }
 
-        div {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 28px;
-            height: 75px;
-            width: 100%;
+    &__title,
+    &__description {
+        max-width: 660px;
+        text-align: center;
+    }
 
-            button.secondary-button {
-                color: $white;
-                border-color: $white;
+    &__title {
+        margin-bottom: 16px;
+    }
 
-                &:hover {
-                    color: $hover-orange;
-                    border-color: $hover-orange;
-                }
+    &__description {
+        margin-bottom: 35px;
+    }
 
-                &:focus {
-                    color: $focus-orange;
-                    border-color: $focus-orange;
-                }
-            }
+    &__buttons-wrapper {
+        @include flex-center;
+        column-gap: 28px;
+        height: 75px;
+
+        @include mobile {
+            height: 60px;
         }
     }
 }

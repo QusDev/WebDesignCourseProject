@@ -6,7 +6,7 @@ const texts = [
 ];
 
 function changeText(index) {
-    const textElement = document.getElementById("footer-text");
+    const textElement = document.getElementById("footer-toggle-text");
   
     textElement.classList.add("fade-out");
   

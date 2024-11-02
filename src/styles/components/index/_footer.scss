@@ -1,171 +1,130 @@
 .footer {
-    background-color: #000000;
-    padding-top: 120px;
-    padding-bottom: 38px;
+    background-color: $black;
+    color: $light-white;
+    padding-bottom: 30px;
 
-    div.container {
-        div.main-information-container {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 160px;
+
+        @include tablet {
+            row-gap: 50px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 60px;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__template-information {
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            color: $light-grey;
+        }
+    }
+
+    &__toggle {
+        padding-top: 65px;
+
+        @include tablet {
+            margin-bottom: 50px;
+        }
+
+        &-text {
+            margin-bottom: 35px;
+            max-width: 175px;
+            text-align: center;
+        }
+
+        &-list {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 87px;
-            margin-bottom: 128px;
+            column-gap: 16px;
+        }
 
-            div.information-container {
-                display: flex;
-                flex-direction: column;
-                gap: 35px;
-                position: relative;
-                margin-top: 40px;
+        &-item {
+            @include flex-center(true);
+            @include square(36px);
 
-                p.information-text {
-                    position: relative;
-                    font-size: 18px;
-                    line-height: 1.6;
-                    color: $white;
-                    opacity: 0.75;
-                    max-width: 175px;
-                }
+            background-color: $orange;
+        }
+    }
 
-                ul.navigation-buttons {
-                    padding: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
+    &__menu-title,
+    &__contact-title {
+        margin-bottom: 40px;
+        
+        @include tablet {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
 
-                    li button {
-                        background-color: $orange;
-                        color: $white;
-                        border: none;
-                        transition: background-color 250ms ease-in-out;
-                        width: 36px;
-                        height: 36px;
+    &__menu {
+        
+        @include tablet {
+            margin-bottom: 50px;    
+        }
 
-                        &:hover {
-                            background-color: $hover-orange;
-                        }
+        &-title {
+            color: $white;
+        }
 
-                        &:focus {
-                            background-color: $focus-orange;
-                        }
-                    }
-                }
-            }
+        &-list {
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 17px;
+            column-gap: 50px;
 
-            div.menu-container {
-                display: flex;
-                flex-direction: column;
-
-                ul.list {
-                    columns: 2;
-                    column-gap: 28px;
-                }
-            }
-
-            div.menu-container,
-            div.page-container {
-                ul.list li {
-                    margin-bottom: 17px;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-
-                    a {
-                        font-size: 18px;
-                        line-height: 1.14;
-                        color: $white;
-                        opacity: 0.75;
-                        transition:
-                            color 250ms ease-in-out,
-                            opacity 250ms ease-in-out;
-
-                        &:hover {
-                            color: $hover-orange;
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-
-            div.menu-container,
-            div.page-container,
-            div.contact-container {
-                h3.title {
-                    font-size: 22px;
-                    line-height: 1.1;
-                    color: $white;
-                    margin-bottom: 40px;
-                    align-self: center;
-                }
-            }
-
-            div.contact-container {
-                ul.list {
-                    li {
-                        display: flex;
-                        flex-direction: row;
-                        border: 2px solid $orange;
-                        padding: 28px;
-                        margin-bottom: 18px;
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-
-                        svg {
-                            width: 48px;
-                            height: 48px;
-                            color: $white;
-                            background-color: $orange;
-                            padding: 4px;
-                            margin-right: 16px;
-                        }
-
-                        div {
-                            p,
-                            a {
-                                font-size: 16px;
-                                line-height: 1.1;
-                                color: $white;
-                            }
-
-                            p {
-                                margin-bottom: 6px;
-                            }
-
-                            a {
-                                opacity: 0.75;
-                                transition:
-                                    color 250ms ease-in-out,
-                                    opacity 250ms ease-in-out;
-
-                                &:hover {
-                                    color: $hover-orange;
-                                    opacity: 1;
-                                }
-                            }
-                        }
-                    }
-                }
+            @include tablet {
+                text-align: center;
             }
         }
 
-        div.web-design-template-information {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        &-link {
+            @include hover {
+                color: $hover-orange;
+            }
+        }
+    }
 
-            p.title {
-                font-size: 18px;
-                line-height: 1.6;
-                color: $light-grey;
+    &__contact {
+
+        &-title {
+            color: $white;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 18px;
+        }
+
+        &-item {
+            display: flex;
+            column-gap: 16px;
+            border: 2px solid $orange;
+            padding: 30px;
+
+            &-svg {
+                color: $white;
+                background-color: $orange;
+                padding: 6px;
             }
 
-            p.description {
-                font-size: 18px;
-                line-height: 1.6;
-                color: $white;
+            &-link {
+                @include hover {
+                    color: $hover-orange;
+                }
             }
         }
     }

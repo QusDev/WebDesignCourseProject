@@ -8,10 +8,10 @@
     <h2 class="feedback-modal__title">
       Leave your feedback
     </h2>
-    <form id="feedback-form" class="feedback-modal__form modal-form">
+    <form action="/" onsubmit="sendMail()" id="feedback-form" class="feedback-modal__form modal-form">
       <div class="feedback-modal__input-wrapper">
         <label class="feedback-modal__label" for="feedback-name">Name</label>
-        <input class="feedback-modal__input" type="text" id="feedback-name" />
+        <input class="feedback-modal__input" type="text" id="feedback-name" required/>
         <svg
           class="feedback-modal__icon"
           fill="currentColor"
@@ -23,7 +23,7 @@
       </div>
       <div class="feedback-modal__input-wrapper">
         <label class="feedback-modal__label" for="feedback-mail">Email</label>
-        <input class="feedback-modal__input" type="text" id="feedback-mail" />
+        <input class="feedback-modal__input" type="email" id="feedback-mail" required/>
         <svg
           class="feedback-modal__icon"
           fill="currentColor"
@@ -41,6 +41,7 @@
           class="feedback-modal__textarea"
           placeholder="enter text"
           id="feedback-comment"
+          required
         ></textarea>
         <svg
           class="feedback-modal__icon"
@@ -51,9 +52,10 @@
           <use href="./images/svg/icons.svg#icon-comment"></use>
         </svg>
       </div>
-      <button class="feedback-modal__button-submit" type="submit" onclick="sendMail()">
+      <button class="feedback-modal__button-submit" type="submit">
         Send
       </button>
+      <span class="feedback-modal__send-status" id="feedback-status">Successfully</span>
     </form>
   </div>
 </div>

@@ -21,17 +21,20 @@
         left: 50%;
         transform: translate(-50%, -50%);
         min-width: 528px;
-        min-height: 581px;
         background-color: $white;
         opacity: 1;
-        border-radius: 4px;
         box-shadow:
             0px 2px 1px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14),
             0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 40px;
+        padding-inline: 40px;
+        padding-block: 40px;
+
+        @include mobile {
+            min-width: 0;
+        }
     }
 
     &__title {
@@ -90,7 +93,6 @@
         &-submit {
             background: $orange;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
             border: none;
             padding: 10px 52px;
             color: $white;
@@ -100,6 +102,7 @@
             letter-spacing: 0.06em;
             transition: background-color 300ms ease-in-out;
             align-self: center;
+            margin-bottom: 20px;
 
             &:hover {
                 background-color: $hover-orange;
@@ -139,10 +142,12 @@
             position: relative;
         }
 
-        &[type="text"] {
+        @include fluid-text(16, 14);
+
+        &[type="text"],
+        &[type="email"] {
             width: 100%;
             height: 100%;
-            border-radius: 4px;
             border: 1px #21212133 solid;
             padding: 11px 11px 11px 42px;
             transition: border-color 300ms ease-in-out;
@@ -176,15 +181,13 @@
             position: relative;
         }
 
-        margin-top: 4px;
         height: 120px;
         width: 100%;
-        border-radius: 4px;
         border: 1px #21212133 solid;
         font-size: 12px;
         font-weight: 400;
         letter-spacing: 0.01em;
-        padding: 11px 37px;
+        padding: 13px 37px;
         resize: none;
         transition: border-color 300ms ease-in-out;
         outline: none;
@@ -198,5 +201,20 @@
     &__textarea:hover + &__icon,
     &__textarea:focus + &__icon {
         color: $orange;
+    }
+
+    &__send-status {
+        @include fluid-text(18, 14);
+
+        text-align: center;
+        justify-self: flex-end;
+
+        &.status-ok {
+            color: #289F41;
+        }
+
+        &.status-error {
+            color: #ED2939;
+        }
     }
 }

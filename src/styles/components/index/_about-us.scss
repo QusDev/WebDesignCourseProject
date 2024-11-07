@@ -27,6 +27,7 @@
         align-self: stretch;
 
         @include mobile {
+            padding-top: 0px;
             text-align: center;
         }
     }

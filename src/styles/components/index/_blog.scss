@@ -22,7 +22,7 @@
         column-gap: 24px;
         row-gap: 27px;
 
-        @include tablet {
+        @include mobile {
             grid-template-columns: auto;
         }
     }
@@ -71,6 +71,10 @@
         &:first-child {
             grid-row: 1 / 4;
             flex-direction: column;
+
+            @include tablet {
+                grid-row: 1;
+            }
         }
     }
 }

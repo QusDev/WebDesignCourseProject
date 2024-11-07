@@ -14,11 +14,19 @@
         justify-content: end;
     }
 
-    &__list {
-        @include flex-center;
+    &__body {
+        height: 90%;
+    }
 
+    &__list {
+        display: flex;
+        align-items: center;
         flex-direction: column;
-        row-gap: 24px;
-        min-height: 85vw;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    &__link {
+        font-size: 52px;
     }
 }

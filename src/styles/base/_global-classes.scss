@@ -10,9 +10,9 @@
     padding-top: 144px;
     padding-bottom: 144px;
 
-    @include mobile {
-        padding-top: 77px;
-        padding-bottom: 77px;
+    @include tablet {
+        padding-top: 66px;
+        padding-bottom: 66px;
     }
 }
 
@@ -33,6 +33,10 @@
 
     @include hover {
         background-color: $hover-orange;
+    }
+
+    @include mobile {
+        padding-inline: 24px;
     }
 }
 
@@ -56,6 +60,10 @@
     @include hover {
         color: $hover-orange;
         border-color: $hover-orange;
+    }
+
+    @include mobile {
+        padding-inline: 26px;
     }
 }
 

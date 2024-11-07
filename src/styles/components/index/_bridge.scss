@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
 
     @include tablet {
-        background-image: linear-gradient(rgba(52, 52, 52, 0.2), rgba(52, 52, 52, 0.2)),
+        background-image: linear-gradient(rgba(52, 52, 52, 0.5), rgba(52, 52, 52, 0.7)),
             url("../images/bridge/bridge-background.jpg");
     }
 }

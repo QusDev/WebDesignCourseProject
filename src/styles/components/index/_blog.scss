@@ -36,8 +36,13 @@
         }
 
         &-image {
+
             @include tablet {
                 width: 100%;
+                height: 374px;
+            }
+
+            @include mobile {
                 height: 100%;
             }
         }
